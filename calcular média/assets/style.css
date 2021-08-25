@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color:rgb(27, 184, 27);
+  --title-color: #fff;
+  --section-color: #ccc;
+  --button-hover: rgb(88, 230, 88);
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+header{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  background: var(--main-color);
+  color: var(--title-color);
+}
+.container{
+  width: 80%;
+  margin: auto;
+  background: var(--section-color);
+}
+.subTitle{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 0.3rem;
+}
+.inputs{
+  max-width: 30rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  margin: 0.5rem 0;
+}
+input{
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 0.4rem;
+  margin-bottom: 0.3rem;
+  outline: none;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+input[type="submit"]{
+  margin: 0.5rem 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background: var(--button-hover);
+}
+#res{
+  width: 100%;
+  height: 5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  background-color: var(--title-color);
+}
+footer{
+  width: 80%;
+  height: 3.5rem;
+  padding-top: 0.3rem;
+  margin: auto;
+  text-align: center;
+  background: var(--main-color);
+}
+footer p{
+  color: var(--title-color);
+  font-size: 0.8rem;
+}
+.social a img{
+  width: 1.5rem;
+  margin: 0.3rem 0.2rem;
+}
+
+/*RESPONSIVO*/
+@media(max-width: 425px){
+  header{
+    width: 100%;
+    padding: 0.8rem;
+  }
+  header h1{
+    font-size: 1.5rem;
+  }
+  .container{
+    width: 100%;
+  }
+  .subTitle{
+    font-size: 0.8rem;
+  }
+  input{
+    width: 90%;
+  }
+  #res{
+    width: 90%;
+  }
+  footer{
+    width: 100%;
+  }
+}
